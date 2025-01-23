@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.6 on win32)" generated="2025-01-22T14:17:40.019152" rpa="false" schemaversion="5">
+<suite id="s1" name="Creator" source="C:\Users\lenovo\PycharmProjects\SapphireTestAutomation\Pages\creator.robot">
+<test id="s1-t1" name="[Set up]" line="6">
+<kw name="Start browser and maximize" owner="Resorces">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:17:40.366711" level="INFO">Opening browser 'Chrome' to base url 'https://testing.sapphireapps.com/authentication/login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T14:17:40.365714" elapsed="3.803065"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T14:17:44.168779" elapsed="0.097739"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:17:44.268512" level="INFO">Typing text 'agency@sapphireapps.com' into text field 'xpath://input[@name="username"]'.</msg>
+<arg>${email}</arg>
+<arg>agency@sapphireapps.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:17:44.267521" elapsed="0.190484"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:17:44.458005" level="INFO">Typing password into text field 'xpath://input[@name="password"]'.</msg>
+<msg time="2025-01-22T14:17:44.499893" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>j*1N7iEF7T%O</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:17:44.458005" elapsed="0.132374"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${login_button}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T14:17:44.590379" elapsed="0.293758"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${login_button}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:17:44.884137" elapsed="0.018947"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:17:44.904081" level="INFO">Clicking button 'xpath://button[@id="login-button"]'.</msg>
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:17:44.903084" elapsed="2.591751"/>
+</kw>
+<status status="PASS" start="2025-01-22T14:17:40.365714" elapsed="7.130117"/>
+</kw>
+<status status="PASS" start="2025-01-22T14:17:40.364717" elapsed="7.131114"/>
+</test>
+<test id="s1-t2" name="Verify the functionality of view creator information" line="7">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:17:47.499823" level="INFO">Clicking element 'xpath:(//span[@class="ml-2 poppins text-black font-medium"])[3]'.</msg>
+<arg>${Creator3_Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:17:47.499823" elapsed="1.853206"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:17:49.353029" level="INFO">Clicking element 'xpath://img[@class="svg-filter-primary-accent-agency relative"]'.</msg>
+<arg>${Creator_QuickView}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:17:49.353029" elapsed="0.110661"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-22T14:17:59.465489" level="INFO">Slept 10 seconds.</msg>
+<arg>10seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-22T14:17:49.463690" elapsed="10.001799"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${Creator_RatePV}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T14:17:59.467449" elapsed="0.296206"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Creator_RatePV}</arg>
+<arg>timeout=20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:17:59.763655" elapsed="0.017951"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:17:59.796567" level="INFO">Element 'xpath://span[contains(normalize-space(),'Rate Per Video')]' is displayed.</msg>
+<arg>${Creator_RatePV}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:17:59.781606" elapsed="0.014961"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${Creator_Country}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T14:17:59.797564" elapsed="0.294849"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Creator_Country}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:00.092413" elapsed="0.015956"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:00.120336" level="INFO">Element 'xpath://span[@class='text-md font-semibold text-black leading-[120%]'][normalize-space()='Country']' is displayed.</msg>
+<arg>${Creator_Country}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:00.108369" elapsed="0.011967"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${Creator_NativeLanguage}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T14:18:00.120336" elapsed="0.284670"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Creator_NativeLanguage}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:00.406008" elapsed="0.029917"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:00.453873" level="INFO">Element 'xpath://span[normalize-space()='Native Language']' is displayed.</msg>
+<arg>${Creator_NativeLanguage}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:00.436920" elapsed="0.016953"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${Creator_PhoneN}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T14:18:00.454871" elapsed="0.283836"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Creator_PhoneN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:00.740703" elapsed="0.046872"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:00.817494" level="INFO">Element 'xpath://span[normalize-space()='Phone']' is displayed.</msg>
+<arg>${Creator_PhoneN}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:00.788572" elapsed="0.028922"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${Creator_Email}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T14:18:00.818492" elapsed="0.293030"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Creator_Email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:01.111522" elapsed="0.015958"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:01.140446" level="INFO">Element 'xpath://span[normalize-space()='Email']' is displayed.</msg>
+<arg>${Creator_Email}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:01.127480" elapsed="0.012966"/>
+</kw>
+<status status="PASS" start="2025-01-22T14:17:47.498835" elapsed="13.641611"/>
+</test>
+<test id="s1-t3" name="Verify Search and View Functionality" line="33">
+<kw name="Start browser and maximize" owner="Resorces" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:01.142440" level="INFO">Opening browser 'Chrome' to base url 'https://testing.sapphireapps.com/authentication/login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T14:18:01.141443" elapsed="3.796887"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T14:18:04.939327" elapsed="0.082781"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:05.023102" level="INFO">Typing text 'agency@sapphireapps.com' into text field 'xpath://input[@name="username"]'.</msg>
+<arg>${email}</arg>
+<arg>agency@sapphireapps.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:05.022108" elapsed="0.176528"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:05.198636" level="INFO">Typing password into text field 'xpath://input[@name="password"]'.</msg>
+<msg time="2025-01-22T14:18:05.239523" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>j*1N7iEF7T%O</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:05.198636" elapsed="0.133641"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${login_button}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T14:18:05.332277" elapsed="0.291226"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${login_button}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:05.623503" elapsed="0.023931"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:05.647434" level="INFO">Clicking button 'xpath://button[@id="login-button"]'.</msg>
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:05.647434" elapsed="2.380267"/>
+</kw>
+<status status="PASS" start="2025-01-22T14:18:01.141443" elapsed="6.887267"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:08.029696" level="INFO">Opening url 'https://testing.sapphireapps.com/agency/htmx/creators/'</msg>
+<arg>${Creator_url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-01-22T14:18:08.028710" elapsed="0.541546"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:08.574243" level="INFO">Typing text 'Kithi Tester' into text field 'xpath://input[@placeholder='Search Creators']'.</msg>
+<arg>${Search_Creator}</arg>
+<arg>Kithi Tester</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:08.572252" elapsed="1.125200"/>
+</kw>
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${Search_Creator}</arg>
+<arg>ENTER</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:09.697452" elapsed="0.062134"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:09.778534" level="INFO">Element 'xpath://img[@class="svg-filter-primary-accent-agency relative"]' is displayed.</msg>
+<arg>${Creator_SearchResult}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:09.759586" elapsed="0.018948"/>
+</kw>
+<status status="PASS" start="2025-01-22T14:18:01.141443" elapsed="8.638089"/>
+</test>
+<test id="s1-t4" name="Verify Casting List Functionality" line="44">
+<kw name="Start browser and maximize" owner="Resorces" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:09.781526" level="INFO">Opening browser 'Chrome' to base url 'https://testing.sapphireapps.com/authentication/login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T14:18:09.780533" elapsed="3.867329"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T14:18:13.647862" elapsed="0.084768"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:13.733630" level="INFO">Typing text 'agency@sapphireapps.com' into text field 'xpath://input[@name="username"]'.</msg>
+<arg>${email}</arg>
+<arg>agency@sapphireapps.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:13.732630" elapsed="0.239361"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:13.971991" level="INFO">Typing password into text field 'xpath://input[@name="password"]'.</msg>
+<msg time="2025-01-22T14:18:14.013878" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>j*1N7iEF7T%O</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:13.971991" elapsed="0.125664"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${login_button}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T14:18:14.097655" elapsed="0.307179"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${login_button}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:14.404834" elapsed="0.024934"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:14.429768" level="INFO">Clicking button 'xpath://button[@id="login-button"]'.</msg>
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:14.429768" elapsed="2.597055"/>
+</kw>
+<status status="PASS" start="2025-01-22T14:18:09.780533" elapsed="7.246290"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:17.027821" level="INFO">Opening url 'https://testing.sapphireapps.com/agency/htmx/creators/'</msg>
+<arg>${Creator_url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-01-22T14:18:17.026823" elapsed="1.613686"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:18.641506" level="INFO">Clicking element 'xpath://button[@id='bulkActions']//*[name()='svg']'.</msg>
+<arg>${Creator_CastingList}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:18.640509" elapsed="0.084780"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:18.737252" level="INFO">Clicking element 'xpath://a[@class='flex items-center gap-[5px] hover:text-primary-accent-agency active:text-black']'.</msg>
+<arg>${View_CastingList}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:18.736253" elapsed="2.789831"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:21.534064" level="INFO">Page title is 'Sapphire Studios - Creators'.</msg>
+<arg>Sapphire Studios - Creators</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-01-22T14:18:21.527082" elapsed="0.007978"/>
+</kw>
+<status status="PASS" start="2025-01-22T14:18:09.779532" elapsed="11.755528"/>
+</test>
+<test id="s1-t5" name="Verify Filters Functionality" line="51">
+<kw name="Start browser and maximize" owner="Resorces" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:21.537055" level="INFO">Opening browser 'Chrome' to base url 'https://testing.sapphireapps.com/authentication/login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T14:18:21.537055" elapsed="2.749737"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T14:18:24.286792" elapsed="1.303516"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:25.592302" level="INFO">Typing text 'agency@sapphireapps.com' into text field 'xpath://input[@name="username"]'.</msg>
+<arg>${email}</arg>
+<arg>agency@sapphireapps.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:25.590308" elapsed="0.192485"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:25.783790" level="INFO">Typing password into text field 'xpath://input[@name="password"]'.</msg>
+<msg time="2025-01-22T14:18:25.815704" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>j*1N7iEF7T%O</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:25.782793" elapsed="0.106715"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${login_button}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T14:18:25.889508" elapsed="0.310172"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${login_button}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:26.200680" elapsed="0.053852"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:26.255530" level="INFO">Clicking button 'xpath://button[@id="login-button"]'.</msg>
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:26.255530" elapsed="2.609152"/>
+</kw>
+<status status="PASS" start="2025-01-22T14:18:21.536057" elapsed="7.328625"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:28.865678" level="INFO">Opening url 'https://testing.sapphireapps.com/agency/htmx/creators/'</msg>
+<arg>${Creator_url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-01-22T14:18:28.865678" elapsed="1.424457"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:30.292130" level="INFO">Clicking element 'xpath://button[@id='bulkActions']//*[name()='svg']'.</msg>
+<arg>${Creator_CastingList}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:30.291141" elapsed="0.128649"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Creator_CastingList}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:30.422787" elapsed="0.037891"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:30.465665" level="INFO">Clicking element 'xpath://button[@id='bulkActions']//*[name()='svg']'.</msg>
+<arg>${Creator_CastingList}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:30.465665" elapsed="0.109707"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:30.577366" level="INFO">Clicking element 'xpath://span[normalize-space()='Tags']'.</msg>
+<msg time="2025-01-22T14:18:30.879545" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-92.png"&gt;&lt;img src="selenium-screenshot-92.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-22T14:18:30.879545" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=131.0.6778.265)
+Stacktrace:
+	GetHandleVerifier [0x00007FF624D080D5+2992373]
+	(No symbol) [0x00007FF62499BFD0]
+	(No symbol) [0x00007FF624835739]
+	(No symbol) [0x00007FF62488A724]
+	(No symbol) [0x00007FF62487CD40]
+	(No symbol) [0x00007FF6248AF36A]
+	(No symbol) [0x00007FF62487C596]
+	(No symbol) [0x00007FF6248AF580]
+	(No symbol) [0x00007FF6248CF584]
+	(No symbol) [0x00007FF6248AF113]
+	(No symbol) [0x00007FF62487A918]
+	(No symbol) [0x00007FF62487BA81]
+	GetHandleVerifier [0x00007FF624D66A2D+3379789]
+	GetHandleVerifier [0x00007FF624D7C32D+3468109]
+	GetHandleVerifier [0x00007FF624D70043+3418211]
+	GetHandleVerifier [0x00007FF624AFC78B+847787]
+	(No symbol) [0x00007FF6249A757F]
+	(No symbol) [0x00007FF6249A2FC4]
+	(No symbol) [0x00007FF6249A315D]
+	(No symbol) [0x00007FF624992979]
+	BaseThreadInitThunk [0x00007FFBF58A54E0+16]
+	RtlUserThreadStart [0x00007FFBF71A485B+43]
+</msg>
+<arg>${Creator_Filter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-01-22T14:18:30.577366" elapsed="0.315143">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=131.0.6778.265)
+Stacktrace:
+	GetHandleVerifier [0x00007FF624D080D5+2992373]
+	(No symbol) [0x00007FF62499BFD0]
+	(No symbol) [0x00007FF624835739]
+	(No symbol) [0x00007FF62488A724]
+	(No symbol) [0x00007FF62487CD40]
+	(No symbol) [0x00007FF6248AF36A]
+	(No symbol) [0x00007FF62487C596]
+	(No symbol) [0x00007FF6248AF580]
+	(No symbol) [0x00007FF6248CF584]
+	(No symbol) [0x00007FF6248AF113]
+	(No symbol) [0x00007FF62487A918]
+	(No symbol) [0x00007FF62487BA81]
+	GetHandleVerifier [0x00007FF624D66A2D+3379789]
+	GetHandleVerifier [0x00007FF624D7C32D+3468109]
+	GetHandleVerifier [0x00007FF624D70043+3418211]
+	GetHandleVerifier [0x00007FF624AFC78B+847787]
+	(No symbol) [0x00007FF6249A757F]
+	(No symbol) [0x00007FF6249A2FC4]
+	(No symbol) [0x00007FF6249A315D]
+	(No symbol) [0x00007FF624992979]
+	BaseThreadInitThunk [0x00007FFBF58A54E0+16]
+	RtlUserThreadStart [0x00007FFBF71A485B+43]
+</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Creator_ParentsTags}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-01-22T14:18:30.892509" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Creator_ParentsTags}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-22T14:18:30.893507" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ParentsTags_Result}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-01-22T14:18:30.893507" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-01-22T14:18:21.536057" elapsed="9.358448">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=131.0.6778.265)
+Stacktrace:
+	GetHandleVerifier [0x00007FF624D080D5+2992373]
+	(No symbol) [0x00007FF62499BFD0]
+	(No symbol) [0x00007FF624835739]
+	(No symbol) [0x00007FF62488A724]
+	(No symbol) [0x00007FF62487CD40]
+	(No symbol) [0x00007FF6248AF36A]
+	(No symbol) [0x00007FF62487C596]
+	(No symbol) [0x00007FF6248AF580]
+	(No symbol) [0x00007FF6248CF584]
+	(No symbol) [0x00007FF6248AF113]
+	(No symbol) [0x00007FF62487A918]
+	(No symbol) [0x00007FF62487BA81]
+	GetHandleVerifier [0x00007FF624D66A2D+3379789]
+	GetHandleVerifier [0x00007FF624D7C32D+3468109]
+	GetHandleVerifier [0x00007FF624D70043+3418211]
+	GetHandleVerifier [0x00007FF624AFC78B+847787]
+	(No symbol) [0x00007FF6249A757F]
+	(No symbol) [0x00007FF6249A2FC4]
+	(No symbol) [0x00007FF6249A315D]
+	(No symbol) [0x00007FF624992979]
+	BaseThreadInitThunk [0x00007FFBF58A54E0+16]
+	RtlUserThreadStart [0x00007FFBF71A485B+43]
+</status>
+</test>
+<test id="s1-t6" name="Verify filter results can clear successfully" line="68">
+<kw name="Start browser and maximize" owner="Resorces" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:30.901485" level="INFO">Opening browser 'Chrome' to base url 'https://testing.sapphireapps.com/authentication/login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T14:18:30.901485" elapsed="4.419185"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T14:18:35.320670" elapsed="0.093749"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:35.415418" level="INFO">Typing text 'agency@sapphireapps.com' into text field 'xpath://input[@name="username"]'.</msg>
+<arg>${email}</arg>
+<arg>agency@sapphireapps.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:35.415418" elapsed="0.263294"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:35.679710" level="INFO">Typing password into text field 'xpath://input[@name="password"]'.</msg>
+<msg time="2025-01-22T14:18:35.729577" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>j*1N7iEF7T%O</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:35.679710" elapsed="0.143616"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${login_button}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T14:18:35.823326" elapsed="0.301196"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${login_button}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:36.125521" elapsed="0.025930"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:36.151451" level="INFO">Clicking button 'xpath://button[@id="login-button"]'.</msg>
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:36.151451" elapsed="2.691095"/>
+</kw>
+<status status="PASS" start="2025-01-22T14:18:30.900490" elapsed="7.942056"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:38.842546" level="INFO">Opening url 'https://testing.sapphireapps.com/agency/htmx/creators/'</msg>
+<arg>${Creator_url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-01-22T14:18:38.842546" elapsed="1.800186"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:40.648717" level="INFO">Clicking element 'xpath://button[@id='bulkActions']//*[name()='svg']'.</msg>
+<arg>${Creator_CastingList}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:40.648717" elapsed="0.206448"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Creator_ExpandTag}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:40.891069" elapsed="0.078789"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:40.970855" level="INFO">Clicking element 'xpath://span[@class='ml-2 poppins text-base lg:block hidden']'.</msg>
+<arg>${Creator_ExpandTag}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:40.970855" elapsed="0.120678"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:41.091533" level="INFO">Clicking element 'xpath://span[normalize-space()='Tags']'.</msg>
+<arg>${Creator_Filter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:41.091533" elapsed="0.117686"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Creator_ParentsTags}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:41.215203" elapsed="0.031914"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:41.249112" level="INFO">Clicking element 'xpath://option[normalize-space()='parents']'.</msg>
+<arg>${Creator_ParentsTags}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:41.248115" elapsed="0.092751"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:41.341864" level="INFO">Clicking element 'xpath://span[@class='poppins text-sm text-primary-accent-agency']'.</msg>
+<arg>${Creator_FilterClear}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:41.341864" elapsed="1.095072"/>
+</kw>
+<status status="PASS" start="2025-01-22T14:18:30.899491" elapsed="11.539440"/>
+</test>
+<test id="s1-t7" name="Verify to load next Creator Page" line="84">
+<kw name="Start browser and maximize" owner="Resorces" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:42.442920" level="INFO">Opening browser 'Chrome' to base url 'https://testing.sapphireapps.com/authentication/login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-22T14:18:42.441923" elapsed="4.150403"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-22T14:18:46.592326" elapsed="0.112702"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:46.706020" level="INFO">Typing text 'agency@sapphireapps.com' into text field 'xpath://input[@name="username"]'.</msg>
+<arg>${email}</arg>
+<arg>agency@sapphireapps.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:46.705028" elapsed="0.226390"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:46.932415" level="INFO">Typing password into text field 'xpath://input[@name="password"]'.</msg>
+<msg time="2025-01-22T14:18:46.975300" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>j*1N7iEF7T%O</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:46.932415" elapsed="0.149599"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${login_button}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T14:18:47.082014" elapsed="0.327472"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${login_button}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:47.409486" elapsed="0.021940"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:47.432425" level="INFO">Clicking button 'xpath://button[@id="login-button"]'.</msg>
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:47.431426" elapsed="2.909222"/>
+</kw>
+<status status="PASS" start="2025-01-22T14:18:42.441923" elapsed="7.898725"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:50.347630" level="INFO">Opening url 'https://testing.sapphireapps.com/agency/htmx/creators/'</msg>
+<arg>${Creator_url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-01-22T14:18:50.346632" elapsed="1.567808"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:51.915438" level="INFO">Clicking element 'xpath://button[@id='bulkActions']//*[name()='svg']'.</msg>
+<arg>${Creator_CastingList}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:51.915438" elapsed="0.099732"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${Creator_NextPage}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-22T14:18:52.016168" elapsed="0.305185"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Creator_NextPage}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-22T14:18:52.321353" elapsed="0.035903"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-22T14:18:52.358253" level="INFO">Clicking element 'xpath://body/div[@class='min-h-rscreen max-h-rscreen lg:grid grid-cols-12 grid-rows-1 gap-0 flex']/div[@class='lg:col-span-9 2xl:col-span-10 flex-1']/div[@class='flex flex-col h-full bg-[#F5F6F9] overflow-y-auto']/div[@class='overflow-y-auto flex flex-1 flex-col relative']/div[@class='flex flex-1']/div[@class='w-full flex flex-col lg:pb-4 lg:px-6 relative']/div[@id='creators']/form[@id='paginator']/div[@class='flex items-center gap-[5px] justify-center']/button[3]//*[name()='svg']'.</msg>
+<arg>${Creator_NextPage}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-22T14:18:52.357256" elapsed="0.202462"/>
+</kw>
+<status status="PASS" start="2025-01-22T14:18:42.440925" elapsed="10.120787"/>
+</test>
+<status status="FAIL" start="2025-01-22T14:17:40.048564" elapsed="72.529103"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Creator" id="s1" pass="6" fail="1" skip="0">Creator</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
